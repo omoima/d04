@@ -6,33 +6,24 @@
 /*   By: omoima <omoima@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 11:23:50 by omoima            #+#    #+#             */
-/*   Updated: 2020/07/15 13:56:43 by omoima           ###   ########.fr       */
+/*   Updated: 2020/07/15 15:49:28 by omoima           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
 
 int ft_fibonacci(int index){
-	int curr;
-	int final;
-	curr = 0;
-	final = 0;
-	
+		
 	if (index < 0){
 		return(-1);
 	}
-	else {
-		final = index;
+	else if (index == 0){
+		return 0;
 	}
-	return final;
+	else if (index == 1){
+		return 1;
+	}
+	else{
+		return ft_fibonacci(index-1) + ft_fibonacci(index-2);
+	}
 }
 
-int main(){
-	int i;
-	i = ft_fibonacci(10);
-
-	printf("%d", i);
-
-	return(0);
-}
