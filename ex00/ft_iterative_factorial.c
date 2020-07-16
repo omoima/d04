@@ -6,7 +6,7 @@
 /*   By: omoima <omoima@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 15:32:24 by omoima            #+#    #+#             */
-/*   Updated: 2020/07/16 12:21:10 by omoima           ###   ########.fr       */
+/*   Updated: 2020/07/16 14:57:16 by omoima           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int ft_iterative_factorial(int nb){
 	while(nb > 1){
 		sum = sum*nb;
 		nb--;
-		return sum;
 	}
 	return sum;
 }
